@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initPreviewTabs();
     initScrollAnimations();
     initSmoothScroll();
+    initImageZoom();
 });
 
 /* ===================================
@@ -450,16 +451,23 @@ function initSmoothScroll() {
 }
 
 /* ===================================
-   IMAGE GALLERY LIGHTBOX (Optional)
+   IMAGE ZOOM / LIGHTBOX
    =================================== */
 
-function initGalleryLightbox() {
-    const galleryItems = document.querySelectorAll('.gallery-item');
+function initImageZoom() {
+    // Select all images that should be zoomable
+    const zoomableImages = document.querySelectorAll(
+        '.mockup-image, .stack-image, .preview-image, .gallery-item img'
+    );
 
-    galleryItems.forEach(item => {
-        item.addEventListener('click', () => {
-            const img = item.querySelector('img');
-            const caption = item.dataset.caption;
+    zoomableImages.forEach(img => {
+        // Add click cursor
+        img.style.cursor = 'pointer';
+
+        img.addEventListener('click', () => {
+            // Get caption from parent's data attribute or img alt
+            const parent = img.closest('[data-caption]');
+            const caption = parent?.dataset.caption || img.alt || '';
 
             // Create lightbox
             const lightbox = document.createElement('div');
@@ -468,7 +476,7 @@ function initGalleryLightbox() {
                 <div class="lightbox-content">
                     <button class="lightbox-close">&times;</button>
                     <img src="${img.src}" alt="${caption}">
-                    <p class="lightbox-caption">${caption}</p>
+                    ${caption ? `<p class="lightbox-caption">${caption}</p>` : ''}
                 </div>
             `;
 
