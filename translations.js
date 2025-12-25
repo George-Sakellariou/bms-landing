@@ -23,10 +23,10 @@ const translations = {
             badge: "Seeking Development Partner",
             titleLine1: "The Future of",
             titleLine2: "Building Management",
-            description: "Transform how residential buildings are managed. Automate expense tracking, intelligent cost distribution, seamless billing, and transparent resident communication — all in one powerful platform.",
+            description: "Transform how residential buildings are managed. Automate expense tracking, intelligent cost distribution, seamless billing, and autonomous calculations of resident share — all in one powerful platform.",
             stats: {
                 time: {
-                    value: "80%",
+                    value: "90%",
                     label: "Less Admin Time"
                 },
                 transparency: {
@@ -45,8 +45,8 @@ const translations = {
         // Problem Section
         problem: {
             tag: "The Problem",
-            title: "Building Management is",
-            titleHighlight: "Broken",
+            title: "Building Management",
+            titleHighlight: "Current State",
             subtitle: "Managing residential buildings today means drowning in spreadsheets, chasing payments, and spending countless hours on tasks that should be automated.",
             cards: [
                 {
