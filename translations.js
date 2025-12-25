@@ -87,7 +87,7 @@ const translations = {
             tag: "Our Solution",
             title: "Meet",
             titleHighlight: "BMS",
-            subtitle: "One platform to manage everything. From expense entry to bill delivery — automated, transparent, and incredibly simple.",
+            subtitle: "One application to manage everything. From expense entry to bill delivery — automated, transparent, and incredibly simple.",
             steps: [
                 {
                     number: "01",
@@ -102,7 +102,7 @@ const translations = {
                 {
                     number: "03",
                     title: "Auto-Generate Bills",
-                    description: "The system calculates each resident's share and generates detailed, professional bills with QR payment codes."
+                    description: "The system calculates each resident's share and generates detailed, professional bills with RF/QR payment codes."
                 },
                 {
                     number: "04",
@@ -154,7 +154,7 @@ const translations = {
                 {
                     icon: "💳",
                     title: "Payment Tracking",
-                    description: "Real-time payment status: Paid, Sent, Pending, Overdue. Never lose track of who owes what."
+                    description: "Real-time payment status: Paid, Pending, Overdue. Never lose track of who owes what."
                 },
                 {
                     icon: "🏷️",
@@ -258,7 +258,6 @@ const translations = {
                     "Detailed UI/UX designs (Figma)",
                     "Data structure specifications",
                     "Feature prioritization",
-                    "Domain expertise in property management",
                     "Commitment to long-term partnership"
                 ]
             },
@@ -267,7 +266,7 @@ const translations = {
                 items: [
                     "Full-stack development capabilities",
                     "Experience with web applications",
-                    "Email integration expertise",
+                    "Secure payment implementation",
                     "Scalable architecture design",
                     "Professional development process"
                 ]
